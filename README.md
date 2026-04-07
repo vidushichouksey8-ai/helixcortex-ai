@@ -10,14 +10,22 @@
 
 ## 🧠 Architecture Overview
 
-```md
 ```mermaid
 graph TD
 
-User[User] --> API[FastAPI]
-API --> Agents[Multi-Agent System]
-Agents --> ML[ML Prediction]
-Agents --> RAG[RAG Pipeline]
-RAG --> LLM[LLM]
-Agents --> DB[(PostgreSQL)]
-Agents --> Lake[(Iceberg Lakehouse)]
+User --> API
+API --> Agents
+Agents --> ML
+Agents --> RAG
+RAG --> LLM
+Agents --> DB
+Agents --> Lake
+
+User[User]
+API[FastAPI]
+Agents[Multi-Agent System]
+ML[ML Prediction]
+RAG[RAG Pipeline]
+LLM[LLM]
+DB[(PostgreSQL)]
+Lake[(Iceberg Lakehouse)]
