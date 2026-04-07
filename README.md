@@ -1,35 +1,21 @@
 # 🏥 HelixCortex AI
 
 <p align="center">
-  <img src="logo.png" width="200"/>
+  <img src="logo.png" width="160"/>
 </p>
 
-Production-grade AI system combining:
-- Multi-agent orchestration
-- Biomedical RAG (LLM + embeddings)
-- ML pipelines
-- Lakehouse architecture (Iceberg)
-
-🚀 Designed to simulate real-world AI healthcare systems
+**Production-grade AI system combining multi-agent orchestration, biomedical RAG, and scalable data architecture for intelligent clinical decision support.**
 
 ---
 
-## 🚀 Features
+## 🧠 Architecture Overview
 
-- Multi-agent AI system
-- Biomedical RAG pipeline
-- Retry + fallback resilience
-- Observability + monitoring
-- Security-first design
-
----
-
-## 💡 Why This Project
-
-This project demonstrates:
-
-- End-to-end AI system design
-- Production-grade architecture
-- Scalable and reliable AI pipelines
-
-→ Built for real-world AI system simulation
+```mermaid
+graph TD
+User → API(FastAPI)
+API → Agents(Multi-Agent System)
+Agents → ML(ML Prediction)
+Agents → RAG(RAG Pipeline)
+RAG → LLM
+Agents → DB(Postgres)
+Agents → Lake(Iceberg)
