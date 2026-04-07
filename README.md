@@ -12,10 +12,20 @@
 
 ```mermaid
 graph TD
-User → API(FastAPI)
-API → Agents(Multi-Agent System)
-Agents → ML(ML Prediction)
-Agents → RAG(RAG Pipeline)
-RAG → LLM
-Agents → DB(Postgres)
-Agents → Lake(Iceberg)
+
+User --> API
+API --> Agents
+Agents --> ML
+Agents --> RAG
+RAG --> LLM
+Agents --> DB
+Agents --> Lake
+
+User[User]
+API[FastAPI]
+Agents[Multi-Agent System]
+ML[ML Prediction]
+RAG[RAG Pipeline]
+LLM[LLM]
+DB[(PostgreSQL)]
+Lake[(Iceberg Lakehouse)]
