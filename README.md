@@ -1,10 +1,12 @@
 # 🏥 HelixCortex AI
 
 <p align="center">
-  <img src="logo.png" width="160"/>
+  <img src="logo.png" width="220"/>
 </p>
 
-**Production-grade AI system combining multi-agent orchestration, biomedical RAG, and scalable data architecture for intelligent clinical decision support.**
+<p align="center">
+<b>Production-grade AI system combining multi-agent orchestration, biomedical RAG, and scalable data architecture for intelligent clinical decision support.</b>
+</p>
 
 ---
 
@@ -13,19 +15,10 @@
 ```mermaid
 graph TD
 
-User --> API
-API --> Agents
-Agents --> ML
-Agents --> RAG
-RAG --> LLM
-Agents --> DB
-Agents --> Lake
-
-User[User]
-API[FastAPI]
-Agents[Multi-Agent System]
-ML[ML Prediction]
-RAG[RAG Pipeline]
-LLM[LLM]
-DB[(PostgreSQL)]
-Lake[(Iceberg Lakehouse)]
+User[User] --> API[FastAPI]
+API --> Agents[Multi-Agent System]
+Agents --> ML[ML Prediction]
+Agents --> RAG[RAG Pipeline]
+RAG --> LLM[LLM]
+Agents --> DB[(PostgreSQL)]
+Agents --> Lake[(Iceberg Lakehouse)]
