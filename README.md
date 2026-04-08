@@ -1,7 +1,7 @@
 # 🏥 HelixCortex AI
 
 <p align="center">
-  <img src="logo.png" width="220"/>
+  <img src="logo-new.png" width="220"/>
 </p>
 
 <p align="center">
