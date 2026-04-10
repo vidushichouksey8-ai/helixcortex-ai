@@ -1,3 +1,5 @@
+<img width="1024" height="1536" alt="logo-new" src="https://github.com/user-attachments/assets/6e81f383-32d2-4f34-9d97-7e0ed7526662" />
+<img width="1024" height="1536" alt="logo-new" src="https://github.com/user-attachments/assets/5a4f05bf-f5ed-4a52-b62b-fa79e1e239e3" />
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6a11cb,100:f7971e&height=200&section=header&text=HelixCortex%20AI&fontSize=40&fontColor=ffffff"/>
 </p>
@@ -24,115 +26,26 @@
 
 ---
 
-## 🚀 Live Demo
+## 🚀 Live Demo (Cloud)
 
-🌐 **API Endpoint**  
+🌐 **Production API**  
 👉 https://helixcortexv3-960764783949.asia-south1.run.app/analyze/p1  
+
+---
+
+## 🧪 API Playground
+
+### ☁️ Cloud Swagger (recommended for reviewers)
+👉 https://helixcortexv3-960764783949.asia-south1.run.app/docs  
+
+### 💻 Local Swagger (for development)
+👉 http://127.0.0.1:8001/docs#/default/analyze_patient_state_api_v1_analyze_state_post  
 
 ---
 
 ## 🧠 System Overview
 
-HelixCortex AI is a **cloud-native, multi-agent AI platform** designed to simulate real-world healthcare intelligence systems.
-
-### 🔬 Core Capabilities
-
-- 🧠 Multi-agent orchestration (modular AI agents)
-- 🔎 Biomedical RAG (FAISS + embeddings)
-- 🤖 Gemini (Vertex AI) reasoning
-- 📊 ML-based risk scoring
-- ☁️ Cloud-native deployment (Google Cloud Run)
-
----
-
-## 🏗️ Architecture
-
-```mermaid
-graph TD
-
-User[User] --> API[FastAPI API Layer]
-API --> Agents[Multi-Agent System]
-
-Agents --> ML[ML Agent]
-Agents --> RAG[RAG Agent]
-Agents --> Gemini[Gemini Agent]
-
-RAG --> Vector[(FAISS Vector DB)]
-Agents --> DB[(PostgreSQL)]
-Agents --> Lake[(Iceberg Lakehouse)]
-
-Gemini --> Output[LLM Insights]
-Output --> Response[Final Response]
-```
-
----
-
-## 🛠️ Local Development Troubleshooting
-
-### `ERROR: [Errno 48] Address already in use` when starting Uvicorn
-
-This means the default port (`8000`) is already occupied by another process.
-
-#### Option 1 (quickest): Run on another port
-
-```bash
-uvicorn app.main:app --reload --port 8001
-```
-
-#### Option 2: Free port `8000`
-
-```bash
-lsof -i :8000
-kill -9 <PID>
-uvicorn app.main:app --reload
-```
-
-#### Option 3: Stop all running Uvicorn processes
-
-```bash
-pkill -f uvicorn
-uvicorn app.main:app --reload
-```
-
-After starting successfully, open:
-
-- `http://127.0.0.1:8001/docs` (if running on 8001)
-- `http://127.0.0.1:8000/docs` (if running on 8000)
-
-
-### `No space left on device` during Homebrew cask install
-
-If you see errors like:
-
-```
-ditto: ... No space left on device
-```
-
-it means macOS does not have enough free disk space (often in `/private/tmp`, where Homebrew unpacks casks).
-
-#### Fix steps
-
-1. Check free disk space:
-
-```bash
-df -h
-```
-
-2. Clean Homebrew caches and stale downloads:
-
-```bash
-brew cleanup -s
-rm -rf ~/Library/Caches/Homebrew/*
-```
-
-3. Remove temporary macOS unpack files (safe if no install is currently running):
-
-```bash
-rm -rf /private/tmp/homebrew-*
-```
-
-4. Retry install:
-
+HelixCortex AI is a **cloud-native, multi-agent AI platform**
 ```bash
 brew install --cask github-copilot-for-xcode
 ```
