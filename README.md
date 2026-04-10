@@ -1,3 +1,4 @@
+<img width="1024" height="1536" alt="logo-new" src="https://github.com/user-attachments/assets/e40c011f-f397-458f-901f-eebee4f95f98" />
 # 🧬 HelixCortex AI
 
 <p align="center">
