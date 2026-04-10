@@ -1,18 +1,27 @@
 # 🧬 HelixCortex AI
 
 <p align="center">
-  <img src="assets/logo-new.png" width="260"/>
+  <img src="https://raw.githubusercontent.com/vidushichouksey8-ai/helixcortex-ai/main/assets/logo-new.png" width="260"/>
 </p>
 
 <p align="center">
   <b>Production-grade AI healthcare system combining multi-agent orchestration, biomedical RAG, and scalable data architecture for intelligent clinical decision support.</b>
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/AI-Multi--Agent-orange"/>
+  <img src="https://img.shields.io/badge/LLM-Gemini-blue"/>
+  <img src="https://img.shields.io/badge/Backend-FastAPI-green"/>
+  <img src="https://img.shields.io/badge/Deploy-Cloud%20Run-black"/>
+</p>
+
 ---
+
 ## 🚀 Live Demo
 
-🌐 API:
-https://helixcortexv3-960764783949.asia-south1.run.app/analyze/p1
+🌐 **API Endpoint**  
+👉 https://helixcortexv3-960764783949.asia-south1.run.app/analyze/p1  
+
 ---
 
 ## 🧠 System Overview
@@ -35,7 +44,6 @@ It integrates:
 graph TD
 
 User[User] --> API[FastAPI API Layer]
-
 API --> Agents[Multi-Agent System]
 
 Agents --> ML[ML Agent]
@@ -47,5 +55,4 @@ Agents --> DB[(PostgreSQL)]
 Agents --> Lake[(Iceberg Lakehouse)]
 
 Gemini --> Output[LLM Insights]
-
 Output --> Response[Final Response]
