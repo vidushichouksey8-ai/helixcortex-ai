@@ -63,6 +63,7 @@ Agents --> Lake[(Iceberg Lakehouse)]
 
 Gemini --> Output[LLM Insights]
 Output --> Response[Final Response]
+```
 
 ---
 
@@ -97,3 +98,43 @@ After starting successfully, open:
 
 - `http://127.0.0.1:8001/docs` (if running on 8001)
 - `http://127.0.0.1:8000/docs` (if running on 8000)
+
+
+### `No space left on device` during Homebrew cask install
+
+If you see errors like:
+
+```
+ditto: ... No space left on device
+```
+
+it means macOS does not have enough free disk space (often in `/private/tmp`, where Homebrew unpacks casks).
+
+#### Fix steps
+
+1. Check free disk space:
+
+```bash
+df -h
+```
+
+2. Clean Homebrew caches and stale downloads:
+
+```bash
+brew cleanup -s
+rm -rf ~/Library/Caches/Homebrew/*
+```
+
+3. Remove temporary macOS unpack files (safe if no install is currently running):
+
+```bash
+rm -rf /private/tmp/homebrew-*
+```
+
+4. Retry install:
+
+```bash
+brew install --cask github-copilot-for-xcode
+```
+
+If it still fails, free additional space (Xcode derived data, old simulator/device backups, large Downloads) and retry.
