@@ -1,5 +1,3 @@
-<img width="1024" height="1536" alt="logo-new" src="https://github.com/user-attachments/assets/6e81f383-32d2-4f34-9d97-7e0ed7526662" />
-<img width="1024" height="1536" alt="logo-new" src="https://github.com/user-attachments/assets/5a4f05bf-f5ed-4a52-b62b-fa79e1e239e3" />
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6a11cb,100:f7971e&height=200&section=header&text=HelixCortex%20AI&fontSize=40&fontColor=ffffff"/>
 </p>
