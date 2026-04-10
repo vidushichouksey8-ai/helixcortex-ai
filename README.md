@@ -63,3 +63,37 @@ Agents --> Lake[(Iceberg Lakehouse)]
 
 Gemini --> Output[LLM Insights]
 Output --> Response[Final Response]
+
+---
+
+## 🛠️ Local Development Troubleshooting
+
+### `ERROR: [Errno 48] Address already in use` when starting Uvicorn
+
+This means the default port (`8000`) is already occupied by another process.
+
+#### Option 1 (quickest): Run on another port
+
+```bash
+uvicorn app.main:app --reload --port 8001
+```
+
+#### Option 2: Free port `8000`
+
+```bash
+lsof -i :8000
+kill -9 <PID>
+uvicorn app.main:app --reload
+```
+
+#### Option 3: Stop all running Uvicorn processes
+
+```bash
+pkill -f uvicorn
+uvicorn app.main:app --reload
+```
+
+After starting successfully, open:
+
+- `http://127.0.0.1:8001/docs` (if running on 8001)
+- `http://127.0.0.1:8000/docs` (if running on 8000)
