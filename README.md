@@ -62,5 +62,4 @@ Agents --> DB[(PostgreSQL)]
 Agents --> Lake[(Iceberg Lakehouse)]
 
 Gemini --> Output[LLM Insights]
-Output --> Response[Final Response]<img width="1024" height="1536" alt="logo-new" src="https://github.com/user-attachments/assets/3631d81c-83fb-43ee-8114-e817351308c0" />
-<img width="1024" height="1536" alt="logo-new" src="https://github.com/user-attachments/assets/39de0ae5-b6c0-4f69-8a14-96ea17e592ba" />
+Output --> Response[Final Response]
