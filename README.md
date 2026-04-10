@@ -9,12 +9,10 @@
 </p>
 
 ---
-
 ## 🚀 Live Demo
 
-🌐 **Cloud Run API**  
-https://your-cloud-run-url/analyze/p1
-
+🌐 API:
+https://helixcortexv3-960764783949.asia-south1.run.app/analyze/p1
 ---
 
 ## 🧠 System Overview
