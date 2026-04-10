@@ -1,12 +1,18 @@
-<img width="1024" height="1536" alt="logo-new" src="https://github.com/user-attachments/assets/e40c011f-f397-458f-901f-eebee4f95f98" />
-# 🧬 HelixCortex AI
-
 <p align="center">
-  <img src="https://raw.githubusercontent.com/vidushichouksey8-ai/helixcortex-ai/main/assets/logo-new.png" width="260"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6a11cb,100:f7971e&height=200&section=header&text=HelixCortex%20AI&fontSize=40&fontColor=ffffff"/>
 </p>
 
 <p align="center">
-  <b>Production-grade AI healthcare system combining multi-agent orchestration, biomedical RAG, and scalable data architecture for intelligent clinical decision support.</b>
+  <img src="https://github.com/user-attachments/assets/e40c011f-f397-458f-901f-eebee4f95f98" width="260"/>
+</p>
+
+<h1 align="center">🧬 HelixCortex AI</h1>
+
+<p align="center">
+  <b>
+    Production-grade AI healthcare system combining multi-agent orchestration, 
+    biomedical RAG, and scalable data architecture for intelligent clinical decision support.
+  </b>
 </p>
 
 <p align="center">
@@ -29,13 +35,13 @@
 
 HelixCortex AI is a **cloud-native, multi-agent AI platform** designed to simulate real-world healthcare intelligence systems.
 
-It integrates:
+### 🔬 Core Capabilities
 
-- 🧠 Multi-agent orchestration  
-- 🔎 Biomedical Retrieval-Augmented Generation (RAG)  
-- 🤖 Gemini (Vertex AI) reasoning  
-- 📊 ML-based risk scoring  
-- ☁️ Cloud Run deployment  
+- 🧠 Multi-agent orchestration (modular AI agents)
+- 🔎 Biomedical RAG (FAISS + embeddings)
+- 🤖 Gemini (Vertex AI) reasoning
+- 📊 ML-based risk scoring
+- ☁️ Cloud-native deployment (Google Cloud Run)
 
 ---
 
@@ -56,4 +62,5 @@ Agents --> DB[(PostgreSQL)]
 Agents --> Lake[(Iceberg Lakehouse)]
 
 Gemini --> Output[LLM Insights]
-Output --> Response[Final Response]
+Output --> Response[Final Response]<img width="1024" height="1536" alt="logo-new" src="https://github.com/user-attachments/assets/3631d81c-83fb-43ee-8114-e817351308c0" />
+<img width="1024" height="1536" alt="logo-new" src="https://github.com/user-attachments/assets/39de0ae5-b6c0-4f69-8a14-96ea17e592ba" />
