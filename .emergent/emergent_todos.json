@@ -1,0 +1,42 @@
+[
+  {
+    "content": "Phase 1: Get Emergent LLM Key + integration playbook",
+    "status": "completed"
+  },
+  {
+    "content": "Phase 1: Create POC script (multi-agent + negotiation + I_alert + FHIR)",
+    "status": "completed"
+  },
+  {
+    "content": "Phase 1: Run POC and fix until passing (3 cases, 10 pytest)",
+    "status": "completed"
+  },
+  {
+    "content": "Phase 2: Get design guidelines",
+    "status": "in_progress"
+  },
+  {
+    "content": "Phase 2: Backend implementation (FastAPI)",
+    "status": "pending"
+  },
+  {
+    "content": "Phase 2: Frontend implementation (React + Three.js)",
+    "status": "pending"
+  },
+  {
+    "content": "Phase 2: End-to-End testing with testing agent",
+    "status": "pending"
+  },
+  {
+    "content": "Phase 3: Emergent Google OAuth integration",
+    "status": "pending"
+  },
+  {
+    "content": "Phase 3: HITL actions (approve/override/contest)",
+    "status": "pending"
+  },
+  {
+    "content": "Phase 4: pytest validation suite + final testing",
+    "status": "pending"
+  }
+]
